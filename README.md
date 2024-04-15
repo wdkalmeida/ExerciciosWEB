@@ -1,3 +1,5 @@
-# ExerciciosWEB
+# desenvolve-introducao-web
 
-Exercicio da aula Hello HTML.
+projeto desenvilve itabira
+programação basica com HTML
+PDI: PD368
