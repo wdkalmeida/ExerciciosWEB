@@ -1,5 +1,5 @@
 # desenvolve-introducao-web
 
-projeto desenvilve itabira
+projeto desenvolve itabira
 programação basica com HTML
 PDI: PD368
