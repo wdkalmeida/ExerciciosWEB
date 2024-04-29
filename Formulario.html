@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de pesquisa</title>
+</head>
+<body>
+    <h1>Pesquisa de Satisfação</h1>
+    <form method="post" action="processar-pesquisa.html">
+        <section>
+            <h2>Dados pessoais</h2>
+            <p>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" />
+            </p>
+            <P>
+                <label for="email">Email:</label>
+                <input type="text" id="email" />
+            </P>
+            <p>
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" />
+            </p>
+        </section>
+        <section>
+            <h2>Dados de pesquisa</h2>
+            <p>Em uma escala de 1 a 5 indique sua satisfação com o atendimento prestado:
+                <input type="radio"  id="1" name="nivel-atendimento"/>
+                <label for="1">1</label>
+                <input type="radio"  id="2" name="nivel-atendimento"/>
+                <label for="2">2</label>
+                <input type="radio"  id="3" name="nivel-atendimento"/>
+                <label for="3">3</label>
+                <input type="radio"  id="4" name="nivel-atendimento"/>
+                <label for="4">4</label>
+                <input type="radio"  id="5" name="nivel-atendimento"/>
+                <label for="5">5</label>
+            </p>
+            <P>
+                Em uma escala de 1 a 5 indique seu nivel de satisfação com a resolução do seu problema:
+                <input type="radio"  id="1" name="nivel-resolução"/>
+                <label for="1">1</label>
+                <input type="radio"  id="2" name="nivel-resolução"/>
+                <label for="2">2</label>
+                <input type="radio"  id="3" name="nivel-resolução"/>
+                <label for="3">3</label>
+                <input type="radio"  id="4" name="nivel-resolução"/>
+                <label for="4">4</label>
+                <input type="radio"  id="5" name="nivel-resolução"/>
+                <label for="5">5</label>
+
+            </P>
+            <p>
+                <label for="departamento"> Departamento de atendimento</label>
+                <select>
+                    <option>Comercial</option>
+                    <option>Financeiro</option>
+                    <option>Cancelamento</option>
+                    <option>Logistica</option>
+                    <option>Ecommerce</option>
+                </select>
+                <p>
+                    <input type="checkbox" id="compartilhar-dados" />
+                    <label for="compartilhar-dados">Autorizo compartilhamento de dados com terceiros</label>
+                </p>
+            </p>
+        </section>
+        <input type="submit" value="Enviar" />   
+    </form>
+</body>
+</html>
