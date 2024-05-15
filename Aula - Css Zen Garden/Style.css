@@ -1,0 +1,16 @@
+/* Color Theme Swatches in Hex */
+/*
+.principal { color: #470459; }
+.destaque { color: #F2CB57; }
+.UI/UX-Design,-Mobile-App-Design-2-hex { color: #8538A6; }
+.UI/UX-Design,-Mobile-App-Design-3-hex { color: #7386BF; }
+.background { color: #F2F2F2; }
+*/
+
+html {
+    background: #F2F2F2;
+    color: #470459;
+}
+
+
+
