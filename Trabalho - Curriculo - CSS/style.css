@@ -1,0 +1,150 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap');
+
+/* Estilização global */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+}
+
+header, section, footer {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1, section h2, section h3, footer p {
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #2c3e50;
+}
+
+nav {
+    background-color: #2c3e50;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+header, section, footer {
+    padding-top: 70px; /* Espaço para o menu fixo */
+}
+
+/* Layout específico para a Apresentação */
+header #apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header #apresentacao img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+}
+
+header #apresentacao p {
+    margin: 5px 0;
+}
+
+header #apresentacao p:last-child {
+    margin-top: 15px;
+}
+
+/* Layout para seções */
+section div {
+    margin-bottom: 10px;
+}
+
+/* Estilização para mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header #apresentacao {
+        padding-top: 90px; /* Ajuste extra para o menu */
+    }
+}
+
+/* Estilização para desktop */
+@media (min-width: 769px) {
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    header, section, footer {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    header #apresentacao {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    header #apresentacao img {
+        margin-right: 20px;
+    }
+
+    header #apresentacao p:last-child {
+        margin-top: 0;
+    }
+}
