@@ -46,6 +46,40 @@ aside ul li {
     display: inline-block;
 }
 
+.supporting footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.benefits {
+    display: flex;
+    border-top: #470459 solid 1px;
+    border-bottom: #470459 solid 1px;
+}
+
+.benefits p {
+    flex-flow: 70%;
+}
+
+.benefits h3 {
+    Order: 2;
+    align-self: center;
+    flex-basis: 30%;
+}
+
+.participation {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: #470459 solid 1px;
+}
+
+.participation h3, .participation p {
+    flex-basis: 50%;
+}
+
+.participation h3 {
+    align-self: center;
+}
 
 .page-wrapper {
     width: 80%;
