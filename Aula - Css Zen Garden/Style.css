@@ -2,11 +2,37 @@
 /* Color Theme Swatches in Hex */
 /*
 .principal { color: #470459; }
-.destaque { color: #F2CB57; }
+.UI/UX-Design,-Mobile-App-Design-3-hex { color: #F2CB57; }
 .UI/UX-Design,-Mobile-App-Design-2-hex { color: #8538A6; }
-.UI/UX-Design,-Mobile-App-Design-3-hex { color: #7386BF; }
+.destaque { color: #7386BF; }
 .background { color: #F2F2F2; }
 */
+
+
+html {
+    background: #F2F2F2;
+    color: #470459;
+
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+p {
+    text-indent: 1em;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {font-size: 1.8rem;}
+h2 {font-size: 1.4rem;}
+he {font-size: 1.2rem;}
+
+.summary {text-align: right;}
+.main p {line-height: 1.5;}
+abbr {font-variant: small-caps;}
 
 
 aside ul {
@@ -28,9 +54,9 @@ aside ul li {
     padding-right: 2%;
 }
 
-#design-selection {
+.design-selection {
     position: absolute;
-    top:530px;
+    top:480px;
     left: 62%;
     padding-left: 1%;
     padding-right: 1%;
@@ -81,6 +107,31 @@ aside ul li {
     align-self: center;
 }
 
+.main p:first-of-type:first-letter {
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    float:left;
+    line-height: 75%;
+}
+
+a {
+    color: #386BF7;
+}
+
+a:hover { 
+    color: #F2CB57;
+}
+
+.design-selection li {
+    border-top: #470459 solid 1px;
+    padding-top: 5px;
+}
+ 
+.design-selection li:last-of-type {
+    border-bottom: #470459 solid 1px;
+    padding-bottom: 5px;
+}
+
 .page-wrapper {
     width: 80%;
     max-width: 1280px;
@@ -109,27 +160,50 @@ aside ul li {
     margin-right: 1em;
 }
 
-html {
-    background: #F2F2F2;
-    color: #470459;
+/* modificação de media querie para telas mobile*/
 
-    font-size: 18px;
-    font-family: Helvetica, sans-serif;
-    
+@media screen and (max-width: 768px) {
+  .design-selection {
+    position: static;
+    width: 100%;
+  }
+  .explanation {
+    border-right: none;
+    width: 100%; 
+  }
+
+  .zen-intro {
+    height: auto;
+  }
+
+  .participation {
+    flex-direction: column;
+  }
+
+    p {
+        text-indent: 0;
+    };
 }
 
-p {
-    text-indent: 1em;
+/* modificação de media querie para tela de impressão*/
+
+@media print {
+    html {
+            font-family: 'Times New Roman', Times, serif;
+    }
+
+    #zen-intro header {
+        background-color: #F2F2F2;
+        color: #470459;
+    }
+
+    .design-selection {
+        position: static;
+        width: 100%;
+      }
+      .explanation {
+        border-right: none;
+        width: 100%; 
+      }
 }
 
-h1, h2, h3 {
-    text-align: center;
-}
-
-h1 {font-size: 1.8rem;}
-h2 {font-size: 1.4rem;}
-he {font-size: 1.2rem;}
-
-.summary {text-align: right;}
-.main p {line-height: 1.5;}
-abbr {font-variant: small-caps;}
